@@ -1,0 +1,183 @@
+#landingpage{
+    .lpBlock{
+        .lpModels{
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba($color: $black, $alpha: .15);
+            padding: 20px 40px 40px;
+            margin-top: 40px;
+
+            .par-sm,
+            .par{
+                color: $dark;
+            }
+
+            &__productWrapper{
+                @include flex;
+                justify-content: space-between;
+            }
+    
+            &__lineVertical,
+            &__lineHorizontal{
+                width: 1px;
+                height: 100px;
+                background-color: #F1F1F1;
+            }
+
+            &__lineHorizontal{
+                width: 100%;
+                height: 1px;
+                margin-top: 32px;
+            }
+
+            &__product{
+                width: 40%;
+                @include flex;
+                justify-content: flex-start;
+                
+                figure{
+                    margin-right: 32px;
+                }
+
+                .par{
+                    font-weight: 500;
+                }
+
+                .btn{
+                    margin-top: 10px;
+                }
+            }
+    
+            &__price{
+                width: 40%;
+
+                .par-sm{
+                    margin-top: 0;
+    
+                    strong{
+                        font-weight: 700;
+                        color: $red;
+                    }
+                }
+            }
+
+            // benefits
+            &__benefits{
+                margin-top: 32px;
+
+                .par{
+                    font-weight: 500;
+                    color: $dark;
+                }
+            }
+
+            &__benefit{
+                @include flex;
+                margin-top: 32px;
+
+                &--icon{
+                    width: 64px;
+                    height: 64px;
+                    fill: $media;
+                    order: 1;
+                    margin-right: 40px;
+                }
+
+                &--text{
+                    order: 2;
+                    flex: 1;
+
+                    .par-sm{
+                        margin-top: 4px;
+    
+                        strong{
+                            color: $media;
+                            font-weight: 500;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// layout-0
+.layout-0 #landingpage{
+    .lpBlock{
+        .lpModels{
+            &__product{
+                figure{
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+        }
+    }
+}
+
+// media
+@media only screen and (max-width: 980px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpBlock .lpModels__lineVertical{
+            display: none;
+        }
+
+        .lpBlock .lpModels__product,
+        .lpBlock .lpModels__price{
+            width: 49%;
+        }
+
+        .lpBlock{
+            .lpModels{
+                &__product{
+                    figure{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpBlock .lpModels__benefit{
+            justify-content: flex-start;
+
+            &--icon{
+                margin-right: 0;
+            }
+
+            &--text{
+                flex: auto;
+                margin-top: 16px;
+            }
+        }
+
+        .lpBlock .lpModels__productWrapper{
+            justify-content: center;
+        }
+
+        .lpBlock .lpModels__product,
+        .lpBlock .lpModels__price{
+            width: 100%;
+        }
+
+        .lpBlock .lpModels__product{
+            justify-content: center;
+            text-align: center;
+
+            figure{
+                margin-right: 0;
+            }
+        }
+
+        .lpBlock .lpModels__price{
+            margin-top: 24px;
+            text-align: center;
+        }
+    }
+}

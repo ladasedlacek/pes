@@ -1,0 +1,38 @@
+// primary colors
+$primary: #0094E7;
+$secondary: #f3f3f3;
+$white: #fff ;
+$black: #000;
+$dark: #212121;
+$light: #F8F8F8;
+$red: #E9242E;
+
+// settings
+@import "mixins";
+@import "alza";
+@import "settings";
+@import "features";
+@import "type";
+
+// layout
+@import "layout/header";
+@import "layout/mainWrapper";
+@import "layout/block";
+@import "layout/navigation";
+@import "layout/tiles";
+@import "layout/carousel";
+@import "layout/articles";
+@import "layout/models";
+@import "layout/footer";
+
+// components
+@import "components/tableNav";
+@import "components/products";
+@import "components/conditions";
+@import "components/checkItems";
+@import "components/contentBoxes";
+@import "components/links";
+
+
+
+

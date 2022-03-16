@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Landing Page Concept</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <style type="text/css">
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                background: #bae2fc;
+            }
+        </style>
+
+        <div id="layout_switch">
+            <button type="button">M</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+        </div>
+
+        <div id="testLayout" class="layout-1">
+            <div id="articlePage">
+                <!-- BEFORE UPLOADING REMOVE EVERYTHING ABOVE UP TO THIS POINT -->
+                <div class="lp" id="landingpage">
+                    <!-- header -->
+                    <header class="lpHeader">
+                        <div class="lpContainer">
+                            <div class="lpHeader__contentWrapper">
+                                <div class="lpHeader__textWrapper">
+                                    <h1 class="notMoveH1">Pes a vše kolem něj</h1>
+                                    <h3 class="hdl3">Čtyřnohý kamarád potřebuje péči. A jak mu dát<br>to nejlepší,&nbsp;<strong>to vám napoví náš psí průvodce</strong>.</h3>
+                                </div>
+                                <div class="lpHeader__imageWrapper">
+                                    <img src="img/header.png" srcset="img/header.png, img/header@2x.png 2x" alt="Pes a vše kolem něj" class="lpHeader__imageWrapper--image no-lazy" width="590" height="368">
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- tabs -->
+                    <nav class="lpMainNav" id="mainNavigation">
+                        <ul class="lpMainNav__wrapper">
+                            <li class="lpMainNav__tab tabActive" data-tab="pro-ni">
+                                <p class="perex fontMedium">Pro ni</p>
+                            </li>
+        
+                            <li class="lpMainNav__tab" data-tab="pro-nej">
+                                <p class="perex fontMedium">Pro něj</p>
+                            </li>
+        
+                            <li class="lpMainNav__tab" data-tab="pro-pary">
+                                <p class="perex fontMedium">Pro páry</p>
+                            </li>
+        
+                            <li class="lpMainNav__tab" data-tab="pro-sebe">
+                                <p class="perex fontMedium">Pro sebe</p>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                    <!-- why mac -->
+                    <main class="lpMain whyMac mainActive" id="tabIntro">
+                        <!-- macOS -->
+                        <div class="lpContent">
+                            <div class="lpContainer">
+                                <h2 class="hdl2">Důvody, proč si pořídit Mac?</h2>
+                                <p class="par-sm">Stojíte před volbou, jaký počítač nebo notebook si pořídit? Společnost <a href="#" class="par-sm--link">Apple</a> získala v posledních letech takový náskok, že odpověď nebyla <strong>nikdy jednodušší</strong>. Počítače Mac nebo notebooky <a href="#" class="par-sm--link">MacBook</a> jsou moderní zařízení běžící <strong>na bezpečném operačním systému macOS</strong>, který vyniká v bezproblémovém propojení s dalšími zařízeními a službami Apple. A pokud už máte <a href="#" class="par-sm--link">iPhone</a>, získáte při používání Macu <strong>celou řadu výhod</strong>, které konkurence prostě nemá. Zejména komplexní synchronizaci všech klíčových dat, univerzální schránku, Apple Pay, Handoff, Kontinuitu a mnoho dalšího. Na všechny tyto výhody se na této stránce podrobně podíváme...</p>
+                
+                                <div class="lpContent__boxesWrapper boxesWrapper">
+                                    <div class="lpContent__box">
+                                        <figure>
+                                            <img src="https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-1.png" srcset="https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-1.png, https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-1@2x.png 2x" alt="" class="lpContent__box--image no-lazy" width="313" height="120" />
+                                        </figure>
+                                        <p class="par">Neskutečně výkonný</p>
+                                        <p class="par-sm">Vmyšlený tak, aby ti pomáhal pracovat, <strong>tvořit nebo si&nbsp;hrát</strong> způsobem, o jakém se ti ani nesnilo. Je nabitý aplikacemi a připravený zabrat hned, jak ho vyndáš z&nbsp;krabice.</p>
+                                    </div>
+                
+                                    <div class="lpContent__box">
+                                        <figure>
+                                            <img src="https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-2.png" srcset="https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-2.png, https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-2@2x.png 2x" alt="" class="lpContent__box--image no-lazy" width="313" height="120" />
+                                        </figure>
+                                        <p class="par">Zvládne víc než PC</p>
+                                        <p class="par-sm">Mac je výkonný, všestranný a nabitý vším, co&nbsp;potřebuješ <strong>k ještě lepší práci</strong>. Má aplikace na práci, tvorbu a vůbec na všechno, co si dokážeš představit.</p>
+                                    </div>
+                
+                                    <div class="lpContent__box">
+                                        <figure>
+                                            <img src="https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-3.png" srcset="https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-3.png, https://cdn.alza.cz/Foto/or/lp/prvniMac/build/img/box-3@2x.png 2x" alt="" class="lpContent__box--image no-lazy" width="313" height="120" />
+                                        </figure>
+                                        <p class="par">Skvělé příslušenství</p>
+                                        <p class="par-sm">Naše příslušenství je promyšlené a dokonale funguje v&nbsp;ekosystému Apple. S každým produktem <strong>budete ještě výkonnější</strong> a produktivnější ať už pracujete na&nbsp;čemkoliv.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- section tiles -->
+                        <section class="sectionTiles lpBlock">
+                            <div class="lpContainer">
+                                <h3 class="hdl3" data-act="edit">Prozkoumejte výkon MacBooků blíže</h3>
+                                <div class="sectionTiles__wrapper boxesWrapper">
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabM1">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-1"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Síla M1 čipu</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabSimple">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-2"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Mac je jednoduchý</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabIphone">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-3"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Mac miluje iPhone</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabCompatibility">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-4"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Mac je kompatibilní</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabAvailability">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-5"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Mac je dostupný</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabMac">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-6"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Mac pro vás</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <!-- tile -->
+                                    <a href="#mainNavigation" class="categoryTile" data-tab="tabAccestories">
+                                        <div class="categoryTile__left">
+                                            <figure>
+                                                <svg class="categoryTile__left--icon icon">
+                                                    <use xlink:href="#section-7"></use>
+                                                </svg>
+                                            </figure>
+                                            <span class="categoryTile__left--name">Mac příslušenství</span>
+                                        </div>
+                                        <div class="categoryTile__right">
+                                            <svg class="categoryTile__right--icon icon">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                
+                        <!-- video -->
+                        <section class="lpVideo lpBlock">
+                            <div class="lpContainer">
+                                <h3 class="hdl3" data-act="edit">Nebojte se přechodu na nový OS!</h3>
+
+                                <div class="lpVideo__wrapper">
+                                    <div class="youTubeWrapper">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OYhkYox-ffg?list=PLJ1CZY8BH-_T2sN5oK94GgRt8RzpzBh-Y" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                
+                                <a href="https://www.youtube.com/playlist?list=PLJ1CZY8BH-_T2sN5oK94GgRt8RzpzBh-Y" class="btn btn-sport"><span class="btn-text">Všechny videa</span></a>
+                            </div>
+                        </section>
+
+                        <!-- carousel -->
+                        <section class="lpCarousel lpBlock">
+                            <div class="lpContainer">
+                                <h3 class="hdl3" data-act="edit">Jaké MacBooky u nás letí nejvíce?</h3>
+                            </div>
+                
+                            <div class="lpContainer__carousel">
+                                <div class="lp-products swiper-container" data-products="sp22530-15" data-settings="shuffle show-disabled console">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" data-prod="" data-prod-url="">
+                                            <img class="swiper-product-img" data-prod-img="" src="/img/blank.gif" alt="" />
+                                            <p class="swiper-product-name" data-prod-name="short-35">&nbsp;</p>
+                                            <!-- <p class="swiper-product-nameext" data-prod-nameext="short-80">&nbsp;</p> -->
+                                            <p class="swiper-product-cprice" data-prod-cprice="">&nbsp;</p>
+                                            <p class="swiper-product-price" data-prod-price="">&nbsp;</p>
+                                            <!-- <span class="swiper-product-button">Detail zboží</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.791" height="26.791" viewbox="0 0 26.791 26.791" class="swiper-button-img">
+                                        <path id="l-arrow" d="M2.944,4.423a1.682,1.682,0,0,0-1.62,1.62A1.482,1.482,0,0,0,2.861,7.581l14.207-.372L16.7,21.416a1.483,1.483,0,0,0,1.537,1.537,1.682,1.682,0,0,0,1.62-1.62l.413-15.786A1.482,1.482,0,0,0,18.73,4.01Z" transform="translate(11.496 30.563) rotate(-135)" fill="#0094e7"></path>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28.93" height="28.93" viewbox="0 0 28.93 28.93" class="swiper-button-img">
+                                        <path id="l-arrow" d="M1.693.014A1.658,1.658,0,0,0,.014,1.693,1.728,1.728,0,0,0,1.722,3.4l15.234.13.13,15.234a1.728,1.728,0,0,0,1.707,1.707,1.658,1.658,0,0,0,1.678-1.678L20.327,1.866A1.728,1.728,0,0,0,18.619.159Z" transform="translate(14.465 -0.02) rotate(45)" fill="#0094e7"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </section>
+                
+                        <!-- articles -->
+                        <section class="lpArticles lpBlock">
+                            <div class="lpContainer">
+                                <h3 class="hdl3">Výběr zajímavostí ze světa Apple</h3>
+                
+                                <div class="lpArticles__wrapper boxesWrapper pb60">
+                                    <!-- article -->
+                                    <a class="articleBox" href="/article/34074.htm">
+                                        <div class="articleBox__imageWrapper">
+                                            <img src="https://i.alza.cz/Foto/or/articles/34074/img/macbook-vyhody.jpg" alt="" class="articleBox__imageWrapper--image" />
+                                            <span class="articleBox__imageWrapper--type">Článek</span>
+                                        </div>
+                                        <div class="articleBox__bottom">
+                                            <span class="articleBox__bottom--name">macOS a Windows: hlavní výhody a nevýhody</span>
+                                        </div>
+                                    </a>
+                
+                                    <a class="articleBox" href="/macbook-pro-m1-a-m1-max-2021">
+                                        <div class="articleBox__imageWrapper">
+                                            <img src="https://cdn.alza.cz/Foto/ImgGalery/Image/macbook-pro-2021.jpg" alt="" class="articleBox__imageWrapper--image" />
+                                            <span class="articleBox__imageWrapper--type">Článek</span>
+                                        </div>
+                                        <div class="articleBox__bottom">
+                                            <span class="articleBox__bottom--name">Nový MacBook Pro? Výkon je neuvěřitelný</span>
+                                        </div>
+                                    </a>
+                
+                                    <a class="articleBox" href="/article/34084.htm">
+                                        <div class="articleBox__imageWrapper">
+                                            <img src="https://i.alza.cz/Foto/ImgGalery/Image/macos-vytvoreni-uzivatelskeho-uctu.jpg" alt="" class="articleBox__imageWrapper--image" />
+                                            <span class="articleBox__imageWrapper--type">Návod</span>
+                                        </div>
+                                        <div class="articleBox__bottom">
+                                            <span class="articleBox__bottom--name">Mac OS (NÁVOD): instalace a první spuštění</span>
+                                        </div>
+                                    </a>
+                
+                                    <a class="articleBox" href="/article/34350.htm">
+                                        <div class="articleBox__imageWrapper">
+                                            <img src="https://i.alza.cz/Foto/or/articles/34350/img/nejlepsi-aplikace-pro-macbook.jpg" alt="" class="articleBox__imageWrapper--image" />
+                                            <span class="articleBox__imageWrapper--type">Článek</span>
+                                        </div>
+                                        <div class="articleBox__bottom">
+                                            <span class="articleBox__bottom--name">macOS: nejlepší aplikace</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+
+                    <!-- footer -->
+                    <!--ShowArticle(24000)-->
+                </div>
+                
+                <!-- TO REMOVE -->
+            </div>
+        </div>
+
+        <script src="build/js/script.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="build/css/style.min.css">
+
+    </body>
+
+</html>
