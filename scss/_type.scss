@@ -59,6 +59,7 @@
         font-weight: 400;
         @include roboto;
         color: $black;
+        margin: 0;
 
         &--link{
             display: inline-block;

@@ -2,7 +2,7 @@
     .lpHeader{
         background: $primary;
         position: relative;
-        padding: 32px 0;
+        padding: 48px 0;
         overflow: hidden;
 
         &__contentWrapper{
@@ -26,6 +26,38 @@
 
         &__imageWrapper{
             width: 50%;
+        }
+    }
+}
+
+// media
+@media only screen and (max-width: 650px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpHeader{
+            &__textWrapper{
+                width: 100%;
+                text-align: center;
+            }
+
+            &__imageWrapper{
+                width: 100%;
+                margin-top: 24px;
+
+                &--image{
+                    max-width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .lpHeader{
+            padding: 24px 0;
         }
     }
 }
