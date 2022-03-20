@@ -17,7 +17,7 @@
         font-weight: 700;
         @include roboto;
         display: block;
-        color: $black;
+        color: $alza;
         margin: 0;
     }
     
@@ -101,6 +101,11 @@
 
     .fontMedium{
         font-weight: 500;
+    }
+
+    .sectionTop{
+        max-width: 85%;
+        margin: 24px auto 0;
     }
 
     strong{

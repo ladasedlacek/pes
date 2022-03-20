@@ -16,12 +16,15 @@ $red: #E9242E;
 
 // layout
 @import "layout/header";
+@import "layout/navigation";
+@import "layout/articles";
+@import "layout/breeds";
+
 @import "layout/mainWrapper";
 @import "layout/block";
-@import "layout/navigation";
+
 @import "layout/tiles";
 @import "layout/carousel";
-@import "layout/articles";
 @import "layout/models";
 @import "layout/footer";
 
