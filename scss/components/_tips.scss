@@ -1,0 +1,38 @@
+#landingpage{
+    .lpTip{
+        padding: 50px 0;
+        background-color: #F8F8F8;
+        
+        .par.tipHeadline{
+            color: $media;
+            font-weight: 500;
+            padding-left: 32px;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 24px;
+                height: 24px;
+                background: url('../../img/tip.svg') center no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .par{
+            margin-top: 16px;
+            color: $dark;
+            text-align: left;
+
+            &:first-of-type{
+                margin-top: 0;
+            }
+        }
+
+        .btn{
+            margin-top: 24px;
+        }
+    }
+}
