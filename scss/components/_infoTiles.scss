@@ -1,4 +1,8 @@
 #landingpage{
+    .infoTiles__wrapper.numberedTiles{
+        margin-top: 56px;
+    }
+
     .numberedTiles{
         counter-reset: tiles; 
         margin-top: 50px;
@@ -33,13 +37,15 @@
         }
     }
 
+    .infoTiles__wrapper{
+        margin-top: 40px;
+    }
+
     .infoTile{
-        width: calc(25% - 20px);
         border-radius: 4px;
         overflow: hidden;
         background: $white;
         box-shadow: 0 1px 4px rgba($color: $black, $alpha: .15);
-        margin: 10px;
 
         &__imageWrapper{
             width: 100%;
@@ -87,24 +93,17 @@
 }
 
 // media
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 980px){
     .mobile #landingpage,
     .mobileapp #landingpage{
         .infoTile{
-            width: calc(50% - 20px);
-        }
-    }
-}
-
-@media only screen and (max-width: 450px){
-    .mobile #landingpage,
-    .mobileapp #landingpage{
-        .infoTile{
-            width: 100%;
-
             &__bottom--desc{
                 min-height: auto;
             }
+        }
+
+        .numberedTiles .infoTile{
+            margin-top: 32px;
         }
     }
 }
