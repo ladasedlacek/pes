@@ -1,7 +1,5 @@
 #landingpage{
     .lpArticles{
-        margin-top: 80px;
-        
         &__wrapper{
             @include flex;
             justify-content: center;

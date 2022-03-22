@@ -1,0 +1,110 @@
+#landingpage{
+    .numberedTiles{
+        counter-reset: tiles; 
+        margin-top: 50px;
+
+        .infoTile{
+            padding: 48px 15px 20px;
+            position: relative;
+            overflow: visible;
+
+            &:before{
+                counter-increment: tiles;
+                content: counter(tiles) '.';
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -50%);
+                width: 56px;
+                height: 56px;
+                border-radius: 100px;
+                background: linear-gradient(180deg, rgba(42,175,250,1) 0%, rgba(14,157,238,1) 100%);
+                font-size: 26px;
+                font-weight: 700;
+                color: $white;
+                text-align: center;
+                line-height: 56px;
+                @include roboto;
+            }
+
+            &__bottom{
+                padding: 0;
+            }
+        }
+    }
+
+    .infoTile{
+        width: calc(25% - 20px);
+        border-radius: 4px;
+        overflow: hidden;
+        background: $white;
+        box-shadow: 0 1px 4px rgba($color: $black, $alpha: .15);
+        margin: 10px;
+
+        &__imageWrapper{
+            width: 100%;
+            padding-top: 50%;
+            position: relative;
+            z-index: 4;
+            overflow: hidden;
+    
+            &--image{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                max-width: 100%;
+                max-height: 100%;
+                min-width: 100%;
+                min-height: 100%;
+                transform: translate(-50%,-50%);
+                object-fit: cover;
+            }
+        }
+    
+        &__bottom{
+            background: $white;
+            box-sizing: border-box;
+            padding: 15px;
+            text-align: center;
+            
+            &--name{
+                font-weight: 500;
+                color: $media;
+            }
+
+            &--desc{
+                color: $dark;
+                margin-top: 10px;
+                min-height: 110px;
+            }
+
+            .btn{
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// media
+@media only screen and (max-width: 700px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .infoTile{
+            width: calc(50% - 20px);
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .mobile #landingpage,
+    .mobileapp #landingpage{
+        .infoTile{
+            width: 100%;
+
+            &__bottom--desc{
+                min-height: auto;
+            }
+        }
+    }
+}

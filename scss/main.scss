@@ -18,15 +18,10 @@ $red: #E9242E;
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/articles";
-@import "layout/breeds";
 @import "layout/info";
-
-@import "layout/mainWrapper";
-@import "layout/block";
 
 @import "layout/tiles";
 @import "layout/carousel";
-@import "layout/models";
 @import "layout/footer";
 
 // components
@@ -37,6 +32,8 @@ $red: #E9242E;
 @import "components/contentBoxes";
 @import "components/links";
 @import "components/tips";
+@import "components/infoTiles";
+@import "components/gradient";
 
 
 
