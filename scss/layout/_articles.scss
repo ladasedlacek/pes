@@ -1,5 +1,22 @@
 #landingpage{
     .lpArticles{
+        position: relative;
+        overflow: hidden;
+
+        &--image-right{
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(40%, -40%);
+        }
+
+        &--image-left{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translate(-45%, 50%);
+        }
+
         &__wrapper{
             margin-top: 24px;
         }

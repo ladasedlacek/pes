@@ -21,7 +21,8 @@ $red: #E9242E;
 @import "layout/info";
 @import "layout/category";
 @import "layout/tiles";
-@import "layout/carousel";
+@import "layout/carousel-products";
+@import "layout/carousel-photos";
 @import "layout/footer";
 
 // components
@@ -33,6 +34,8 @@ $red: #E9242E;
 @import "components/links";
 @import "components/tips";
 @import "components/infoTiles";
+@import "components/swiper";
+@import "components/decorationImages";
 
 
 
