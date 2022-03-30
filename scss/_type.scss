@@ -103,7 +103,7 @@
         font-weight: 500;
     }
 
-    .sectionTop{
+    section .sectionTop{
         max-width: 85%;
         margin: 24px auto 0;
     }
@@ -114,6 +114,14 @@
     
     a{
         text-decoration: none;
+    }
+}
+
+// layout 0
+.layout-0 #landingpage{
+    .notMoveH1{
+        font-size: size(40);
+        line-height: size(52);
     }
 }
 
