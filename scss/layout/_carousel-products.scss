@@ -238,6 +238,26 @@
     }
 }
 
+#landingpage .lpCarousel.carouselPhotos{
+    .lp-container__carousel .swiper-slide{
+        box-shadow: 0 1px 4px rgba($color: $black, $alpha: .15);
+        padding: 0;
+
+        &:hover{
+            cursor: default;
+            box-shadow: 0 1px 4px rgba($color: $black, $alpha: .15);
+        }
+
+        .infoTile{
+            box-shadow: none;
+        }
+
+        .infoTile__bottom--desc.par{
+            margin: 0 auto;
+        }
+    }
+}
+
 // open carousel
 /* #landingpage .lpCarousel.carouselOpen{
     height: 100%;

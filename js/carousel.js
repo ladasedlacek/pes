@@ -1,4 +1,40 @@
-console.log('Version 1.01')
+document.addEventListener('DOMContentLoaded', function () {
+	var photosSwiper = new Swiper('.photosSwiper', {
+		observer: true,
+		speed: 400,
+		slidesPerGroup: 4,
+		spaceBetween: 20,
+		navigation: {
+			  // tento zápis umožní více karouselům v rámci jedné LP aby reagovaly pouze na svá tlačítka
+			  nextEl: '.photosSwiper .swiper-button-next',
+			  prevEl: '.photosSwiper .swiper-button-prev',
+		},
+		pagination: {
+			  // tento zápis umožní více karouselům v rámci jedné LP aby reagovaly pouze na své pagination
+			  el: '.carouselPhotos .swiper-pagination',
+			  type: 'bullets',
+			  clickable: true,
+		},
+		breakpoints: {
+			300: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+				slidesPerGroup: 2
+			},
+			650: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+				slidesPerGroup: 3
+			},
+			800: {
+				slidesPerView: 4,
+				spaceBetween: 20,
+				slidesPerGroup: 4
+			}
+		}
+	});
+}, false);
+
 // 1)  Byly vytvořeny prázdné elementy produktů (ještě nejsou naplněny hodnotami, pro start Swiperu to ale stačí).
 function produktyVytvoreny(event) {
 	if (event && event.type === "productsCreated") {
@@ -40,48 +76,8 @@ function produktyVytvoreny(event) {
                   	spaceBetween: 20,
                   	slidesPerGroup: ($("#body2.layout-1").length) ? 6 : 5
 				}
-			},
-			on: {
-				init: function init() {
-					
-				}
 			}
 		});
-
-        var photosSwiper = new Swiper('.photosSwiper', {
-            observer: true,
-            speed: 400,
-            slidesPerGroup: 4,
-            spaceBetween: 20,
-            navigation: {
-                  // tento zápis umožní více karouselům v rámci jedné LP aby reagovaly pouze na svá tlačítka
-                  nextEl: '.photosSwiper .swiper-button-next',
-                  prevEl: '.photosSwiper .swiper-button-prev',
-            },
-            pagination: {
-                  // tento zápis umožní více karouselům v rámci jedné LP aby reagovaly pouze na své pagination
-                  el: '.carouselPhotos .swiper-pagination',
-                  type: 'bullets',
-                  clickable: true,
-            },
-            breakpoints: {
-                300: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                    slidesPerGroup: 2
-                },
-                550: {
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                    slidesPerGroup: 3
-                },
-                700: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    slidesPerGroup: 4
-                }
-            }
-        });
 	}
 }
 
